@@ -1,7 +1,8 @@
-package heranca;
+package heranca.apps;
 
-public class FacebookMensseger extends ServicoDeMsgInstatanea{
+public class FacebookMensseger extends ServicoDeMsgInstatanea {
     public void enviarMensagem() {
+        validarConectadoNaInternet();
         System.out.println("enviar face");
     }
 

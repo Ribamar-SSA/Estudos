@@ -1,6 +1,8 @@
-package Interface;
+package Interface.equipamentos.impressora;
 
-import Interface.equipamentos.impressora.Impressora;
-
-public class Lasejek extends Impressora {
+public class Lasejek implements Impressora {
+    @Override
+    public void imprimir() {
+        System.out.println("imprimindo");
+    }
 }

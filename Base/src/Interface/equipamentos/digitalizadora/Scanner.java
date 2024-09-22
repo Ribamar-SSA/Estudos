@@ -1,4 +1,8 @@
-package Interface;
+package Interface.equipamentos.digitalizadora;
 
-public class Scanner extends  Digitalizadora{
+public class Scanner implements Digitalizadora {
+    @Override
+    public void digitar() {
+        System.out.println("digitando");
+    }
 }

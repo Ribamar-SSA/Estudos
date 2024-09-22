@@ -1,9 +1,10 @@
-package heranca;
+package heranca.apps;
 
 public class TelegramMensseger extends ServicoDeMsgInstatanea {
 
     @Override
     public void enviarMensagem() {
+        validarConectadoNaInternet();
         System.out.println("enviar telef");
     }
 

@@ -1,4 +1,4 @@
-package msnMessage;
+package encapsulamentoMsnMessage;
 
 public class ComputadorPedrinho {
     public static void main(String[] args) {

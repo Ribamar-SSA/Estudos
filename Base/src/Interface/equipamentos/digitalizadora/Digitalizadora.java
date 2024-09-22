@@ -1,7 +1,5 @@
-package Interface;
+package Interface.equipamentos.digitalizadora;
 
-public class Digitalizadora {
-    public  void digitar() {
-        System.out.println("digitalizando");
-    }
+public interface Digitalizadora {
+    public  void digitar();
 }

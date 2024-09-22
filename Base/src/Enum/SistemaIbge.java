@@ -6,6 +6,7 @@ public class SistemaIbge {
 //            System.out.println(e.getName() +" "+e.getSigla());
 //        }
 
+        //não precisa do new
         EstadoBrasileiro exemplo1 = EstadoBrasileiro.RIO_JANEIRO;
 
         System.out.println(exemplo1.getName());

@@ -1,5 +1,5 @@
 package Enum;
-
+//enum é um conjunto de objetos
 public enum EstadoBrasileiro {
     //constantes enum
     SAO_PAULO("SP","SAO PAULO", 19),

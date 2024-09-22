@@ -1,4 +1,4 @@
-package msnMessage;
+package encapsulamentoMsnMessage;
 
 public class MsnMessage {
 

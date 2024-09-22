@@ -1,4 +1,4 @@
-package heranca;
+package heranca.apps;
 
 public abstract class ServicoDeMsgInstatanea {
 
@@ -8,4 +8,10 @@ public abstract class ServicoDeMsgInstatanea {
     public abstract void recebendoMensagem();
     public abstract void enviarMensagem();
 
+    //Com o encapsulamento protected posso usar nas classes dentro do pacote apps
+    protected void validarConectadoNaInternet(){
+        System.out.println("valindando se está conectado");
+    }
+//    private void salvandoHistoricoMensagem(){
+//        System.out.println("salvando histórico da mensagem");
 }

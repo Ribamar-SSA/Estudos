@@ -1,7 +1,6 @@
-package Interface;
+package Interface.equipamentos.copiadora;
 
-public class Copiadora {
-    public  void copiar() {
-        System.out.println("copiando");
-    }
+public  interface Copiadora {
+    public  void copiar();
+
 }
