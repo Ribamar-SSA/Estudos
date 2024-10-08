@@ -11,12 +11,13 @@ public class DirectoryStreamPt1 {
 
         Path path = Paths.get(".");
 
-        try(DirectoryStream<Path> stremam1 = Files.newDirectoryStream(path)){
-            for(Path path1 : stremam1){
+        try(DirectoryStream<Path> directoryStream = Files.newDirectoryStream(path)){
+            for(Path path1 : directoryStream){
                 System.out.println(path1.getFileName());
             }
         }catch (IOException e){
             e.printStackTrace();
         }
+
     }
 }

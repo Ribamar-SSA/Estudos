@@ -1,6 +1,6 @@
 package MaratonaJava.service;
 
-import meu.lambdas.dominio.Anime;
+import MaratonaJava.lambdas.dominio.Anime;
 
 public class AnimeComparators {
 

@@ -1,7 +1,7 @@
 package MaratonaJava.lambdas.test;
 
-import meu.lambdas.dominio.Anime;
-import meu.service.AnimeComparators;
+import MaratonaJava.lambdas.dominio.Anime;
+import MaratonaJava.service.AnimeComparators;
 
 import java.util.ArrayList;
 import java.util.Collections;
