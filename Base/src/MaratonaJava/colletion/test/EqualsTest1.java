@@ -1,6 +1,6 @@
-package MaratonaJava.equals.test;
+package MaratonaJava.colletion.test;
 
-import MaratonaJava.equals.dominio.Smartphone;
+import MaratonaJava.colletion.dominio.Smartphone;
 
 public class EqualsTest1 {
     public static void main(String[] args) {

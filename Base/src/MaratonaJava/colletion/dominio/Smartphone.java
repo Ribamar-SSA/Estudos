@@ -1,6 +1,4 @@
-package MaratonaJava.equals.dominio;
-
-import java.util.Objects;
+package MaratonaJava.colletion.dominio;
 
 public class Smartphone {
     private String serialNumber;
