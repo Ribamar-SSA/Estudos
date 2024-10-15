@@ -20,12 +20,12 @@ public class Anime {
         this.title = title;
     }
 
-    public int getQuantity() {
+    public int getEpisodes() {
         return episodes;
     }
 
-    public void setQuantity(int quantity) {
-        this.episodes = quantity;
+    public void setEpisodes(int e) {
+        this.episodes = episodes;
     }
 
     public Anime(String title, int quantity) {

@@ -10,8 +10,8 @@ public class BinarySerachTest2 {
     public static void main(String[] args) {
         List<Manga> mangaList = new ArrayList<>();
 
-        mangaList.add(new Manga(3,"a",5.30));
         mangaList.add(new Manga(2,"c",6));
+        mangaList.add(new Manga(3,"a",5.30));
         mangaList.add(new Manga(1,"b",5.30));
         mangaList.add(new Manga(6,"d",3));
         mangaList.add(new Manga(5,"f",5.30));

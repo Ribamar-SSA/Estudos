@@ -10,6 +10,7 @@ public class Manga implements Comparable<Manga>{
     private  String nome;
     private double preco;
 
+
     @Override
     public String toString() {
         return "Manga{" +
@@ -57,7 +58,7 @@ public class Manga implements Comparable<Manga>{
         return Objects.hash(id, nome, preco);
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
