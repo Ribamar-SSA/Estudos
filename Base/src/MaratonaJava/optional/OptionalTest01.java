@@ -20,7 +20,7 @@ public class OptionalTest01 {
 
 
 
-        Optional<String> optionalString = Optional.ofNullable(findName("ribamar"));
+        Optional<String> optionalString = Optional.ofNullable(findName("ribam"));
 
         System.out.println("optional empty");
         System.out.println(optionalString);
@@ -31,6 +31,8 @@ public class OptionalTest01 {
         System.out.println(empty);
 
 
+        System.out.println("teste final");
+        optionalString = Optional.of("teste final 2");
         //se o objeto estiver presente eu consigo trabalhar com ele sem ocorrer exceções
         optionalString.ifPresent(new Consumer<String>() {
             @Override
@@ -40,10 +42,9 @@ public class OptionalTest01 {
         });
 
 
-
-        String name = findName("sousa");
-        //não ocorreu, mas poderia ter ocorrido um NullPointer exeption
-        System.out.println(name.toLowerCase());
+//        String name = findName("sousa");
+//        //não ocorreu, mas poderia ter ocorrido um NullPointer exeption
+//        System.out.println(name.toLowerCase());
     }
 
     private static String findName(String name){

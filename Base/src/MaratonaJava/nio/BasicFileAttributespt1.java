@@ -14,7 +14,7 @@ public class BasicFileAttributespt1 {
 
         LocalDateTime date = LocalDateTime.now().minusDays(2);
 
-//        File file = new File("pasta/arquivoatt.txt");
+//        File.txt file = new File.txt("pasta/arquivoatt.txt");
 //        try {
 //            boolean isCreatedFile = file.createNewFile();
 //        } catch (IOException e) {

@@ -6,9 +6,12 @@ package MaratonaJava.streams.test;
 
 import MaratonaJava.streams.dominio.LightNovel;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class StreamTest1 {
+public class StreamTest2 {
 
     private static List<LightNovel> lightNovelsList = new ArrayList<>(List.of(
             new LightNovel("Violet Evergarden",10),
@@ -22,16 +25,14 @@ public class StreamTest1 {
             new LightNovel("bways jonny",63)));
 
     public static void main(String[] args) {
-        lightNovelsList.sort(Comparator.comparing(LightNovel::getNome));
-        System.out.println(lightNovelsList);
+        List<String> lightNovels = lightNovelsList.stream()
+                .sorted(Comparator.comparing(LightNovel :: getNome))
+                .filter(ln -> ln.getPrice()<63)
+                .limit(3)
+                //extrai o que precisamos
+                .map(LightNovel ::  getNome)
+                .collect(Collectors.toList());
 
-        List<String> listStrings = new ArrayList<>();
-        for(LightNovel lightNovel : lightNovelsList ){
-            if(lightNovel.getPrice()<63)
-            {
-               listStrings.add(lightNovel.getNome());
-            }
-
-        }
+        System.out.println(lightNovels);
     }
 }
