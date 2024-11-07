@@ -66,7 +66,6 @@ public class ThreadTest01 {
         //não é garantido que essa indicação será realizada
         t4.setPriority(Thread.MAX_PRIORITY);
 
-
         t1.start();
         t2.start();
         t3.start();

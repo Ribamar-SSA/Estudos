@@ -32,7 +32,9 @@ public class MapTest1 {
         //cada par chave-valor é representado como um objeto Map.Entry<K,V>
         // o method .entrySey() retorna um Set de entrys
         for(Map.Entry<String, String> entry : stringStringMap.entrySet()){
+
             System.out.println(entry.getKey() + " - "+ entry.getValue());
+
         }
 
     }
