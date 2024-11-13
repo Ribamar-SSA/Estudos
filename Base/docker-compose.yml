@@ -1,0 +1,18 @@
+version: '2.4'
+#seção serviços
+services:
+  db:
+    image: mysql
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    #"portaContainer:portaPC "
+    ports:
+      - "3306:3306"
+
+    volumes:
+      #monta o volume onde ele será mapeado dentro do container
+       - devdojo_maratona_java_data:/var/lib/mysql
+#seção volume
+volumes:
+   devdojo_maratona_java_data: # define o volume persistente
