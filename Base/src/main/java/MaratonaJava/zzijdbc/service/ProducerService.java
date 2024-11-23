@@ -72,4 +72,10 @@ public class ProducerService {
      public static void updatePrepared(Producer producer){
         ProducerRepository.updatePrepared(producer);
      }
+
+    public static List<Producer> findByNameCallablePreparedStatement(String stringName ){
+        return ProducerRepository.findByNameCallablePreparedStatement(stringName);
+    }
+
+
 }

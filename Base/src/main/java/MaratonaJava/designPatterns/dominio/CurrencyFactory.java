@@ -7,8 +7,8 @@ public class CurrencyFactory {
     public static Currency novaCurrency(Country country){
 
         switch(country){
-            case USA:new UsDollar();
-            case BRAZIL:new Real();
+            case USA:return new UsDollar();
+            case BRAZIL:return new Real();
             default:throw new IllegalArgumentException("no currency found for this country");
 
         }

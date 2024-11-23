@@ -2,8 +2,8 @@ version: '2.4'
 #seção serviços
 services:
   db:
-    image: mysql
-    container_name: mysql
+    image: mysql:5.7
+    container_name: mysql_container4
     environment:
       MYSQL_ROOT_PASSWORD: root
     #"portaContainer:portaPC "

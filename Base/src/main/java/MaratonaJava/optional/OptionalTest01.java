@@ -52,7 +52,8 @@ public class OptionalTest01 {
 
         int i = list.indexOf(name);
 
-        if(i!=-1){
+        System.out.println("inde:"+i);
+        if(i != -1){
             return list.get(i);
         }
             return null;
